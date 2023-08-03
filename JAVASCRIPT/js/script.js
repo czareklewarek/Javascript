@@ -45,9 +45,9 @@ function buttonClicked(playerMove) {
 }
 
 
-var buttonRock = document.getElementById('button-rock');
-var buttonPaper = document.getElementById('button-paper');
-var buttonScissors = document.getElementById('button-scissors');
+const buttonRock = document.getElementById('button-rock');
+const buttonPaper = document.getElementById('button-paper');
+const buttonScissors = document.getElementById('button-scissors');
 
 buttonRock.addEventListener('click', function(){ 
     buttonClicked('kamień'); });
