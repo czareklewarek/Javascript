@@ -50,32 +50,9 @@ var buttonPaper = document.getElementById('button-paper');
 var buttonScissors = document.getElementById('button-scissors');
 
 buttonRock.addEventListener('click', function(){ 
-    buttonClicked('Guzik kamień'); });
+    buttonClicked('kamień'); });
 buttonPaper.addEventListener('click', function(){ 
-    buttonClicked('Guzik papier'); });
+    buttonClicked('papier'); });
 buttonScissors.addEventListener('click', function(){ 
-    buttonClicked('Guzik nożyce'); });
-Przy okazji usunalem CI tu zbedne kopie tej samej funkcji, bo np. buttonClicked było parę razy 😉
-A! W HTML koniecznie przestaw tagi <script> na sam koniec. Jesli sa one bowiem przed buttonami, to skrypty zostaną załadowane zanim buttony będą gotowe. A to źle, bo jednak nasz skrypt bedzie juz chcial cos z tymi buttonami robic.
-Powinno byc wiec tak:
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Kamień, papier, nożyce</title>
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	<div class="container">
-		<div id="buttons"></div>
-		<div id="messages"></div>
-	</div>
-	<div id="buttons">
-		<button id="button-rock">Kamień</button>
-		<button id="button-paper">Papier</button>
-		<button id="button-scissors">Nożyce</button>
-	</div>
-	<script src="js/functions.js"></script>
-	<script src="js/script.js"></script>
-</body>
-</html>
+    buttonClicked('nożyce'); });
+
